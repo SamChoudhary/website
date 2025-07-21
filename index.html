@@ -1,97 +1,170 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="refresh" content="0; url=https://www.jaatsdway.com" />
-    <title>Redirecting...</title>
-  </head>
-  <body>
-    <p>If you are not redirected, <a href="https://www.jaatsdway.com">click here</a>.</p>
-  </body>
-</html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Welcome to Jaatsdway</title>
+  <title>JaatsDway! Sports</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #f5f7fa;
-      --primary: #007acc;
-      --text: #333;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background-color: #001f4d;
+      color: white;
+      line-height: 1.6;
     }
 
     header {
-      background: var(--primary);
-      color: #fff;
-      padding: 1.5rem 2rem;
+      padding: 3rem 1rem;
       text-align: center;
+      background: radial-gradient(circle at top left, #0044cc, #001f4d);
     }
 
-    main {
-      flex: 1;
-      padding: 2rem;
-      text-align: center;
+    header h1 {
+      font-size: 2.8rem;
     }
 
-    h1 {
-      font-size: 2.5rem;
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.2rem;
+      color: #bbd4ff;
+    }
+
+    .section {
+      padding: 3rem 1rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #f0f0f0;
+    }
+
+    .players-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .player-card {
+      background: #002d80;
+      padding: 1rem;
+      border-radius: 12px;
+      text-align: center;
+      width: 160px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .player-card img {
+      width: 100%;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
       margin-bottom: 1rem;
     }
 
-    p {
+    .player-card h3 {
       font-size: 1.1rem;
-      max-width: 600px;
-      margin: 0 auto 2rem;
+      margin-bottom: 0.3rem;
+      color: #ffffff;
     }
 
-    a.button {
-      display: inline-block;
-      padding: 0.75rem 1.5rem;
-      background: var(--primary);
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-      transition: background 0.2s ease-in-out;
+    .player-card span {
+      font-size: 0.9rem;
+      color: #a0c4ff;
     }
 
-    a.button:hover {
-      background: #005b99;
+    .news {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .news-article {
+      background: #003399;
+      padding: 2rem;
+      border-radius: 10px;
+      max-width: 700px;
+      text-align: center;
+    }
+
+    .news-article h3 {
+      font-size: 1.5rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .news-article p {
+      font-size: 1rem;
+      color: #cfdfff;
     }
 
     footer {
-      background: #ddd;
       text-align: center;
       padding: 1rem;
+      background: #001a3c;
+      color: #99bbff;
       font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Jaatsdway</h1>
-    <p>Welcome to my personal domain</p>
+    <h1>Welcome to JaatsDway Sports</h1>
+    <p>Your Gateway to the World of Sports</p>
   </header>
 
-  <main>
-    <h1>🚀 Site Is Live!</h1>
-    <p>This is a modern static page hosted using GitHub Pages and my custom domain <strong>jaatsdway.com</strong>.</p>
-    <a href="https://www.jaatsdway.com" class="button">Visit Main Site</a>
-  </main>
+  <section class="section">
+    <h2>Meet Our Players</h2>
+    <div class="players-grid">
+      <div class="player-card">
+        <img src="https://via.placeholder.com/160?text=YJ" alt="Anurag Patankar">
+        <h3>Anurag Patankar</h3>
+        <span>Captain</span>
+      </div>
+      <div class="player-card">
+        <img src="https://via.placeholder.com/160?text=SS" alt="Sanwar Mal">
+        <h3>Sanwar mal</h3>
+        <span>Captain</span>
+      </div>
+      <div class="player-card">
+        <img src="https://via.placeholder.com/160?text=JB" alt="Chetan Shewale">
+        <h3>Chetan Shewale</h3>
+        <span>Captain</span>
+      </div>
+      <div class="player-card">
+        <img src="https://via.placeholder.com/160?text=JA" alt="Milind Gupta">
+        <h3>Milind Gupta</h3>
+        <span>Bowler</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Latest News</h2>
+    <div class="news">
+      <div class="news-article">
+        <h3>Dominant Victory in Season Opener</h3>
+        <p>Jaatsway Sports triumphs in a spectacular display of cricketing prowess.</p>
+      </div>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 Jaatsdway. All rights reserved.
+    &copy; 2025 Jaatsway Sports. All rights reserved.
   </footer>
+
 </body>
 </html>
